@@ -127,7 +127,7 @@ async def main():
     filter_option = input("\nBạn Có Muốn Lọc Proxy Trùng Không? (y/n): ")
     if filter_option.lower() == 'y':
         unique_proxies = list(set(scrapped_proxies))
-        print(f' [~] Tổng Proxies Hiện Có: {len(unique_proxies)}')
+        print(f' [~] Tổng Proxies Hiện Có: {len(unique_proxies)}\nProxy Được Lưu Tại proxies.txt\n')
     elif filter_option.lower() == 'n':
         print(" [~] Proxy Trùng Không Được Lọc.")
     else:
